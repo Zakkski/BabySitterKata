@@ -54,11 +54,18 @@ public class BabySitterTests {
         Assert.assertEquals("The start time and end time are the same", baby.sittingJob(6, 6));
     }
 
+    //Test to make sure times entered are from 1-12
+    @Test
+    public void outOfBoundsTimesReturnError(){
+        Assert.assertEquals("Those times do not exist", baby.sittingJob(13, 4));
+        Assert.assertEquals("Those times do not exist", baby.sittingJob(2, 34));
+        Assert.assertEquals("Those times do not exist", baby.sittingJob(123, 554));
+    }
+
     /*Tests still needed
     * -Make sure start and end times are not out of bounds
     * -can take an input of different families
     * -make sure times function with am and pm (End times don't begin before start times)
-    * -make sure inputs are not the same
     *
     * Objectives
     * -Convert final return to int
