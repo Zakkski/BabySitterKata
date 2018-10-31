@@ -24,10 +24,11 @@ public class BabySitter {
             return "The start time and end time are the same";
         }
 
-        if(!startInPM && endInPM)
-        {
-            return "Start time can't be in the AM while end time is PM";
-        }
+        if(!startInPM)
+            startTime += 12;
+
+        if(!endInPM)
+            endTime += 12;
 
         if(startTime > endTime){
             return "Those times don't work";
