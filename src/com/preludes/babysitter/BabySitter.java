@@ -7,6 +7,10 @@ public class BabySitter {
         if(startTime == 4){
             return "Work can't begin at 4am";
         }
+        else if(endTime == 5){
+            return "Work can't end at 5pm";
+        }
+
         int hoursWorked = endTime - startTime;
         int rateOfPay = 15;
         int totalPay = hoursWorked * rateOfPay;
