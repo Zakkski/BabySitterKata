@@ -24,8 +24,11 @@ public class BabySitterTests {
         Assert.assertEquals("$30", baby.sittingJob(5, 7));
     }
 
-    //Test to ensure work doesn't start before 5pm
+    //Test to ensure work doesn't start at 4am
     @Test
     public void enteringAStartTimeBefore5ReturnsError(){
+        Assert.assertEquals("Work can't begin at 4am", baby.sittingJob(4, 8));
+        Assert.assertEquals("Work can't begin at 4am", baby.sittingJob(4, 2));
+        Assert.assertEquals("Work can't begin at 4am", baby.sittingJob(4, 10));
     }
 }
