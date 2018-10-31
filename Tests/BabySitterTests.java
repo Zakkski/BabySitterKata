@@ -14,13 +14,19 @@ public class BabySitterTests {
     @Test
     public void workingOneHourWithFamilyA(){
         BabySitter baby = new BabySitter();
-        Assert.assertEquals(15, baby.sittingJob(5, 6));
+        Assert.assertEquals("$15", baby.sittingJob(5, 6));
     }
 
     //Tests from 5pm - 7pm with Family A
     @Test
     public void workingTwoHoursWithFamilyA(){
         BabySitter baby = new BabySitter();
-        Assert.assertEquals(30, baby.sittingJob(5, 7));
+        Assert.assertEquals("$30", baby.sittingJob(5, 7));
+    }
+
+    //Test to ensure work doesn't start before 5pm
+    @Test
+    public void enteringAStartTimeBefore5ReturnsError(){
+        BabySitter baby = new BabySitter();
     }
 }
