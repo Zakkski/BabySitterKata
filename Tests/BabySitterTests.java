@@ -48,6 +48,12 @@ public class BabySitterTests {
         Assert.assertEquals("Those times don't work", baby.sittingJob(12, 8));
     }
 
+    //Test to ensure that start time is before end time (if start is pm and end is am)
+    @Test
+    public void enteringAnEndTimeThatIsBeforeStartTimeReturnsError_2(){
+        Assert.assertEquals("Start time can't be in the AM while end time is PM", baby.sittingJob(2, 8));
+    }
+
     //Test to ensure start time and end time are not the same
     @Test
     public void sameStartAndEndReturnsError(){
@@ -65,6 +71,7 @@ public class BabySitterTests {
     /*Tests still needed
     * -can take an input of different families
     * -make sure times function with am and pm (End times don't begin before start times)
+    * -test pay rate math crossing over pm to am (Maybe add 12 to all am?)
     *
     * Objectives
     * -Convert final return to int
