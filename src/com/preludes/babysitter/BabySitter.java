@@ -10,6 +10,9 @@ public class BabySitter {
         else if(endTime == 5){
             return "Work can't end at 5pm";
         }
+        else if (startTime == endTime){
+            return "The start time and end time are the same";
+        }
 
         if(startTime > endTime){
             return "Those times don't work";

@@ -48,5 +48,20 @@ public class BabySitterTests {
         Assert.assertEquals("Those times don't work", baby.sittingJob(12, 8));
     }
 
-    
+    //Test to ensure start time and end time are not the same
+    @Test
+    public void sameStartAndEndReturnsError(){
+        Assert.assertEquals("The start time and end time are the same", baby.sittingJob(6, 6));
+    }
+
+    /*Tests still needed
+    * -Make sure start and end times are not out of bounds
+    * -can take an input of different families
+    * -make sure times function with am and pm (End times don't begin before start times)
+    * -make sure inputs are not the same
+    *
+    * Objectives
+    * -Convert final return to int
+    * -Refactor time verification code into separate method
+    * */
 }

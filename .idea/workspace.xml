@@ -31,12 +31,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1686" />
+          <entry key="java" value="2392" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1686" />
+          <entry key="JAVA" value="2392" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -44,20 +44,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/preludes/babysitter/BabySitter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="238">
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/BabySitterTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="45" column="77" selection-start-line="45" selection-start-column="77" selection-end-line="45" selection-end-column="77" />
+            <state relative-caret-position="306">
+              <caret line="53" column="94" selection-start-line="53" selection-start-column="94" selection-end-line="53" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#192#193#0" expanded="true" />
@@ -141,7 +141,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540956467081" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540956863305" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -187,18 +187,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BabySitterTests - 2018.10.30 at 23h 01m 38s.xml">
-      <configuration name="BabySitterTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabySitterTests - 2018.10.30 at 23h 02m 51s.xml">
-      <configuration name="BabySitterTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabySitterTests - 2018.10.30 at 23h 08m 35s.xml">
-      <configuration name="BabySitterTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BabySitterTests - 2018.10.30 at 23h 10m 10s.xml">
-      <configuration name="BabySitterTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BabySitterTests - 2018.10.30 at 23h 14m 27s.xml">
       <configuration name="BabySitterTests" configurationId="JUnit" />
     </history-entry>
@@ -215,6 +203,18 @@
       <configuration name="BabySitterTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BabySitterTests - 2018.10.30 at 23h 19m 55s.xml">
+      <configuration name="BabySitterTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTests - 2018.10.30 at 23h 25m 25s.xml">
+      <configuration name="BabySitterTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTests - 2018.10.30 at 23h 25m 50s.xml">
+      <configuration name="BabySitterTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTests - 2018.10.30 at 23h 26m 46s.xml">
+      <configuration name="BabySitterTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BabySitterTests - 2018.10.30 at 23h 27m 49s.xml">
       <configuration name="BabySitterTests" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -254,10 +254,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/preludes/babysitter/BabySitter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/BabySitterTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="45" column="77" selection-start-line="45" selection-start-column="77" selection-end-line="45" selection-end-column="77" />
+        <state relative-caret-position="306">
+          <caret line="53" column="94" selection-start-line="53" selection-start-column="94" selection-end-line="53" selection-end-column="94" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#192#193#0" expanded="true" />
@@ -267,13 +274,6 @@
             <element signature="e#520#521#0" expanded="true" />
             <element signature="e#585#586#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/preludes/babysitter/BabySitter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
