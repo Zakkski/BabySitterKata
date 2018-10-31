@@ -16,4 +16,11 @@ public class BabySitterTests {
         BabySitter baby = new BabySitter();
         Assert.assertEquals(15, baby.sittingJob(5, 6));
     }
+
+    //Tests from 5pm - 7pm with Family A
+    @Test
+    public void workingTwoHoursWithFamilyA(){
+        BabySitter baby = new BabySitter();
+        Assert.assertEquals(30, baby.sittingJob(5, 7));
+    }
 }

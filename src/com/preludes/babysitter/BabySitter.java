@@ -4,6 +4,9 @@ public class BabySitter {
 
     //Method to input times of work
     public int sittingJob(int startTime, int endTime){
-        return 15;
+        int hoursWorked = endTime - startTime;
+        int rateOfPay = 15;
+        int totalPay = hoursWorked * rateOfPay;
+        return totalPay;
     }
 }
