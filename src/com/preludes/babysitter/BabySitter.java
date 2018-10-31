@@ -4,7 +4,10 @@ public class BabySitter {
 
     //Method to input times of work
     public String sittingJob(int startTime, int endTime){
-        if(startTime < 0 || startTime > 12 || endTime < 0 || endTime > 12){
+
+        boolean timesAreOutOfBounds = (startTime < 0 || startTime > 12 || endTime < 0 || endTime > 12);
+
+        if(timesAreOutOfBounds){
             return "Those times do not exist";
         }
         else if(startTime == 4){
