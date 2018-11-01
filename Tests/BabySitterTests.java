@@ -88,10 +88,23 @@ public class BabySitterTests {
         Assert.assertEquals("$24", famB.sittingJob(5, 7));
     }
 
+    //Test for family C's beginning rate
+
+    @Test
+    public void familyCForTwoHours(){
+        Assert.assertEquals("$30", famC.sittingJob(5, 7));
+    }
+
+    //Test that family A's rate is different for later hours
+    @Test
+    public void familyAInTheAM(){
+        Assert.assertEquals("$40", famA.sittingJob(1, 3));
+    }
+
 
 
     /*Tests still needed
-    * -can take an input of different families
+    * -different hours charge different amounts
 
     *
     * Objectives

@@ -46,6 +46,10 @@ public class Family {
         boolean startInPM = (5 <= startTime && 12 >= startTime);
         boolean endInPM = (5 <= endTime && 12 >= endTime);
 
+        byte rate1HoursCounter = 0;
+        byte rate2HoursCounter = 0;
+        byte rate3HoursCounter = 0;
+
         if(timesAreInBounds){
             return "Those times do not exist";
         }
@@ -71,8 +75,17 @@ public class Family {
 
         //Math to calculate total pay
 
-        int hoursWorked = endTime - startTime;
-        int totalPay = hoursWorked * period1Rate;
+        for(int i = startTime; i < endTime; i++){
+
+            if(i >= period1Start && i <= period1End)
+                rate1HoursCounter++;
+            if(i >= period2Start && i <= period2End)
+                rate2HoursCounter++;
+            if(i >= period3Start && i <= period3End)
+                rate3HoursCounter++;
+        }
+
+        int totalPay = (rate1HoursCounter * period1Rate) + (rate2HoursCounter * period2Rate) + (rate3HoursCounter * period3Rate);
         return "$" + Integer.toString(totalPay);
     }
 }
