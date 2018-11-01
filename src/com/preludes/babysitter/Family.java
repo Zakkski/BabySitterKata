@@ -79,9 +79,9 @@ public class Family {
 
             if(i >= period1Start && i <= period1End)
                 rate1HoursCounter++;
-            if(i >= period2Start && i <= period2End)
+            else if(i >= period2Start && i <= period2End)
                 rate2HoursCounter++;
-            if(i >= period3Start && i <= period3End)
+            else if(i >= period3Start && i <= period3End)
                 rate3HoursCounter++;
         }
 

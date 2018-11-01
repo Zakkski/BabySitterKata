@@ -14,7 +14,7 @@ public class BabySitterTests {
     public void classCreation(){
         famA = new Family(5, 10,15, 11, 16, 20);
         famB = new Family(5,9,12,10,11,8,12,16,16);
-        famC = new Family(5,8,15,9,16,15);
+        famC = new Family(5,8,21,9,16,15);
     }
 
     //Tests from 5pm - 6pm with Family A
@@ -92,7 +92,7 @@ public class BabySitterTests {
 
     @Test
     public void familyCForTwoHours(){
-        Assert.assertEquals("$30", famC.sittingJob(5, 7));
+        Assert.assertEquals("$42", famC.sittingJob(5, 7));
     }
 
     //Test that family A's rate is different for later hours
@@ -107,16 +107,18 @@ public class BabySitterTests {
         Assert.assertEquals("$70", famA.sittingJob(9, 1));
         Assert.assertEquals("$35", famA.sittingJob(10,12));
     }
+
+    //Test that family B's hours work when crossing rates
+    @Test
+    public void familyBFromPMToAM(){
+        Assert.assertEquals("$40", famB.sittingJob(8,12));
+        Assert.assertEquals("$44", famB.sittingJob(9, 1));
+    }
+
+    //Test that family C's hours work when crossing rates
+    @Test
+    public void familyCFromPMToAM(){
+        Assert.assertEquals("$72", famC.sittingJob(7, 11));
+    }
     
-
-
-
-    /*Tests still needed
-    *
-
-    *
-    * Objectives
-    * -Convert final return to int
-    * -Refactor time verification code into separate method
-    * */
 }
