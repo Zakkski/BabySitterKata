@@ -120,5 +120,13 @@ public class BabySitterTests {
     public void familyCFromPMToAM(){
         Assert.assertEquals("$72", famC.sittingJob(7, 11));
     }
-    
+
+    //Final tests for full length of times for each family
+    @Test
+    public void familyABCFrom5To4(){
+        Assert.assertEquals("$190", famA.sittingJob(5,4));
+        Assert.assertEquals("$140", famB.sittingJob(5,4));
+        Assert.assertEquals("$189", famC.sittingJob(5,4));
+    }
+
 }
