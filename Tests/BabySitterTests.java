@@ -101,10 +101,18 @@ public class BabySitterTests {
         Assert.assertEquals("$40", famA.sittingJob(1, 3));
     }
 
+    //Test that family A's hours work when crossing rates
+    @Test
+    public void familyAFromPMToAM(){
+        Assert.assertEquals("$70", famA.sittingJob(9, 1));
+        Assert.assertEquals("$35", famA.sittingJob(10,12));
+    }
+    
+
 
 
     /*Tests still needed
-    * -different hours charge different amounts
+    *
 
     *
     * Objectives
