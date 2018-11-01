@@ -7,11 +7,11 @@ public class BabySitter {
 
         //Code to catch any errors with time
 
-        boolean timesAreOutOfBounds = (startTime < 0 || startTime > 12 || endTime < 0 || endTime > 12);
+        boolean timesAreInBounds = (startTime < 0 || startTime > 12 || endTime < 0 || endTime > 12);
         boolean startInPM = (5 <= startTime && 12 >= startTime);
         boolean endInPM = (5 <= endTime && 12 >= endTime);
 
-        if(timesAreOutOfBounds){
+        if(timesAreInBounds){
             return "Those times do not exist";
         }
         else if(startTime == 4){
@@ -34,7 +34,6 @@ public class BabySitter {
             return "Those times don't work";
         }
 
-
         //Math to calculate total pay
 
         int hoursWorked = endTime - startTime;
@@ -42,4 +41,5 @@ public class BabySitter {
         int totalPay = hoursWorked * rateOfPay;
         return "$" + Integer.toString(totalPay);
     }
+
 }

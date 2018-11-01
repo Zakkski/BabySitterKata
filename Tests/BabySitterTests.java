@@ -69,10 +69,18 @@ public class BabySitterTests {
         Assert.assertEquals("Those times do not exist", baby.sittingJob(123, 554));
     }
 
+    //Begin tests to work with different families...
+
+    @Test
+    public void familyAForTwoHours(){
+        Assert.assertEquals("$30", baby.sittingJob(5,7));
+    }
+
+
+
     /*Tests still needed
     * -can take an input of different families
-    * -make sure times function with am and pm (End times don't begin before start times)
-    * -test pay rate math crossing over pm to am (Maybe add 12 to all am?)
+
     *
     * Objectives
     * -Convert final return to int
